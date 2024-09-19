@@ -1,0 +1,21 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm install && gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "node-fetch": "^2.7.0",
+    "sass": "^1.79.1"
+  }
+}

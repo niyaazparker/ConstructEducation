@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Bootstrap Website</title>
+	<!-- Bootstrap JS and jQuery (if not already included) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="frontend/dist/styles/app.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+	
+	<nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="company logo" width="180" height="42"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Campus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Learn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+                <a href="#" class="btn btn-custom" data-toggle="modal" data-target="#infoModal">Button</a>
+            </div>
+			
+        </div>
+    </nav>
+
+	<!-- Modal Structure -->
+	<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<i class="fa fa-check" aria-hidden="true"></i>
+			<h3 class="modal-title" id="infoModalLabel">Massa a faucibus porttitor est maecenas aliquet</h3>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i>
+			  </span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<p>Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+		  </div>
+		  <div class="modal-footer">
+			<a href="#" class="btn btn-link p-0">Quam id molestie sit <span class="ml-3"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+			</span></a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- Hero Section -->
+    <header class="main-header">
+        <div class="container text-center text-white">
+			<img src="assets/HeroImage.png" width="100%" height="auto" />
+			<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+				<li class="breadcrumb-item">
+				  <a href="#" class="active"> Home</a>
+				</li>
+				<li class="breadcrumb-item">
+				  <a href="#">Careers and study opportunities</a>
+				</li>
+			  </ol>
+			</nav>
+			
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+			<div class="col-lg-11 col-md-12 col-12  intro-section mx-auto text-center py-4">
+				<h1>Nec accumsan massa pulvinar rhoncus dictum.</h1>
+				<p class="text-left">Vel ultrices ornare arcu placerat viverra egestas sit. Cursus commodo vitae faucibus hac. Sem pretium lacus nunc urna commodo feugiat lacus. Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+				<a href="#" class="btn btn-custom">Button</a>
+			</div>
+			<div class="row py-5">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-12 space-between content-sub">
+					<div>
+						<h2>In molestie eros ac elit ac.</h2>
+						<p>Lorem ipsum dolor sit amet consectetur. Sapien aliquam morbi suspendisse velit commodo. Lacus amet semper aliquet id neque nunc. Risus amet gravida adipiscing netus. Vel ultrices ornare arcu placerat viverra egestas sit. Cursus commodo vitae faucibus hac. Sem pretium lacus nunc urna commodo feugiat lacus. Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+					</div>
+					<!-- Search Input -->
+					<div>
+						<p>Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus.</p>
+						<div class="searchBox align-center p-2 px-3">
+								<input type="text" class="form-control p-0" placeholder="Placeholder text">
+								<i class="fa fa-search" aria-hidden="true"></i>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-12 text-end img-sub">
+					<img src="assets/mainimg.png"/>
+				</div>
+			</div>
+			<hr/>
+	
+            <!-- Latest Blog Section (Carousel) -->
+            <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+			<h3>Latest blogs</h3>
+			  <!-- Pagination Dots -->
+			  
+
+			  <div class="carousel-inner">
+				<!-- First slide -->
+				<div class="carousel-item active">
+				  <div class="blog-container">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image1.png" width="100%" height="auto" alt="Blog Post 1">
+					  <p>Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image2.png" width="100%" height="auto" alt="Blog Post 2">
+					  <p>Sapien aliquam morbi suspendisse velit commodo. Lacus amet semper aliquet id neque nunc.</p>
+					</div>
+					<div class="ccol-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image3.png" width="100%" height="auto" alt="Blog Post 3">
+					  <p>Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+					</div>
+				  </div>
+				</div>
+				<!-- Second slide -->
+				<div class="carousel-item">
+				  <div class="blog-container">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image3.png" width="100%" height="auto" alt="Blog Post 4">
+					  <p>Sapien aliquam morbi suspendisse velit commodo. Lacus amet semper aliquet id neque nunc.</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image2.png" width="100%" height="auto" alt="Blog Post 5">
+					  <p>Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image1.png" width="100%" height="auto" alt="Blog Post 6">
+					  <p>Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+					</div>
+				  </div>
+				</div>
+
+				<div class="carousel-item">
+				  <div class="blog-container">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image3.png" width="100%" height="auto" alt="Blog Post 4">
+					  <p>Sapien aliquam morbi suspendisse velit commodo. Lacus amet semper aliquet id neque nunc.</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image2.png" width="100%" height="auto" alt="Blog Post 5">
+					  <p>Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-post">
+					  <img src="assets/image1.png" width="100%" height="auto" alt="Blog Post 6">
+					  <p>Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="align-center gap-80">
+			  <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			  </button>
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  </div>
+			  <!-- Custom Prev Button -->
+			  <!-- Custom Next Button -->
+			  <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			  </button>
+			  </div>
+			</div>
+        </div>
+    </section>
+
+    <!-- Accordion Section -->
+    <section class="accordion-section py-5">
+        <div class="container">
+			<h3>In molestie eros ac elit ac.</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            In molestie eros ac elit ac.
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur. Sapien aliquam morbi suspendisse velit commodo. Lacus amet semper aliquet id neque nunc. Risus amet gravida adipiscing netus. Vel ultrices ornare arcu placerat viverra egestas sit. Cursus commodo vitae faucibus hac. Sem pretium lacus nunc urna commodo feugiat lacus. Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            In molestie eros ac elit ac.
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur. Sapien aliquam morbi suspendisse velit commodo. Lacus amet semper aliquet id neque nunc. Risus amet gravida adipiscing netus. Vel ultrices ornare arcu placerat viverra egestas sit. Cursus commodo vitae faucibus hac. Sem pretium lacus nunc urna commodo feugiat lacus. Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            In molestie eros ac elit ac.
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur. Sapien aliquam morbi suspendisse velit commodo. Lacus amet semper aliquet id neque nunc. Risus amet gravida adipiscing netus. Vel ultrices ornare arcu placerat viverra egestas sit. Cursus commodo vitae faucibus hac. Sem pretium lacus nunc urna commodo feugiat lacus. Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.
+                        </div>
+                    </div>
+                </div>
+				<div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            In molestie eros ac elit ac.
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur. Sapien aliquam morbi suspendisse velit commodo. Lacus amet semper aliquet id neque nunc. Risus amet gravida adipiscing netus. Vel ultrices ornare arcu placerat viverra egestas sit. Cursus commodo vitae faucibus hac. Sem pretium lacus nunc urna commodo feugiat lacus. Quam id molestie sit leo vulputate. Nisi aliquet in quis aenean nisi. Blandit nunc quis pulvinar morbi parturient vitae porttitor in risus. Massa a faucibus porttitor est maecenas aliquet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+			<a href="#" class="footer-logo"><img src="assets/logo_alt.png" alt="company logo"></a>
+            <div class="row">
+                <div class="col-md-4 py-3">
+					<ul>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+					</ul>
+                </div>
+
+                <div class="col-md-4 py-3">
+					<ul>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+					</ul>
+                </div>
+
+                <div class="col-md-4 py-3">
+					<ul>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+						<li><p>Nisi aliquet in quis aenean nisi</p></li>
+					</ul>
+                </div>
+			</div>
+            <div class="socials">
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="text-white me-2"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="mb-0 text-start">Cursus commodo vitae faucibus hac. Sem pretium lacus nunc urna commodo feugiat lacus.</p>
+			<p class="mb-0 text-start">Massa a faucibus porttitor est maecenas aliquet.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+</html>
